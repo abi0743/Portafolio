@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos_personalizados.css"> 
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Mi Portafolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Acerca de</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero d-flex align-items-center justify-content-center text-center reveal">
+        <div class="text-white">
+            <h1 class="display-3 fw-bold">Abigail Aguirre</h1>
+            <p class="lead">Desarrolladora de Software | Programación Web</p>
+            <a href="#projects" class="btn btn-primary btn-lg mt-3">Ver Proyectos</a>
+        </div>
+    </header>
+
+    <!-- ACERCA DE MI -->
+    <section id="about" class="py-5 reveal">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5 text-center">
+                    <img src="assets/sobre mi.jpeg" class="rounded-circle img-fluid shadow" alt="Perfil">
+                </div>
+                <div class="col-md-7 mt-4 mt-md-0">
+                    <h2 class="fw-bold">Sobre mí</h2>
+                    <p>Hola, soy Abigail Antonella Aguirre, estudiante de la Tecnicatura Superior en Desarrollo de Software. Me apasiona el mundo de la tecnología y el desarrollo de aplicaciones modernas, con un enfoque en la creación de soluciones eficientes, atractivas y fáciles de usar. Disfruto enfrentar nuevos desafíos y aprender continuamente para mejorar mis habilidades y mantenerme actualizada con las tendencias actuales del sector.
+                    <p>Cuento con experiencia en Python, Django, React, Node.js, Java, así como en el uso de HTML5, CSS3, JavaScript, MySQL y MongoDB. Mi objetivo es seguir creciendo como desarrolladora web, aportando creatividad, dedicación y compromiso en cada proyecto, ya sea de forma individual o colaborando en equipos de trabajo.</p>
+                    <p>Si tienes alguna pregunta o necesitas ayuda con tu proyecto, no dudes en ponerte en contacto conmigo. Estoy aquí para ayudarte a alcanzar tus objetivos y mejorar tus habilidades.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="projects" class="py-5 bg-light reveal">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-5">Mis Proyectos</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card shadow h-100">
+                        <img src="assets/sgo.jpg" class="card-img-top" alt="Proyecto 1">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Punto Cultura</h5>
+                            <p class="card-text">Aplicación web creada para promocionar eventos y actividades culturales en la provincia.</p>
+                            <a href="https://puntocultura.netlify.app/" class="btn btn-outline-primary">Ver Proyecto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card shadow h-100">
+                        <img src="assets/cultural-musical-2.jpg" class="card-img-top" alt="Proyecto 2">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Sonidos de la Ciudad-Desafio</h5>
+                            <p class="card-text">Proyecto creado para evaluacion en la materia de Programacion III</p>
+                            <a href="https://sonidos-de-la-ciudad-desafio.netlify.app/" class="btn btn-outline-primary">Ver Proyecto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card shadow h-100">
+                        <img src="assets/python.jpg" class="card-img-top" alt="Proyecto 3">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Juego Interactivo</h5>
+                            <p class="card-text">Juegp de la serpiente creado en python usando la libreria Pygame.</p>
+                            <a href="https://github.com/abi0743/Juego-serpiente.git" class="btn btn-outline-primary">Ver Codigo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contact" class="py-5 reveal">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-5">Contacto</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Nombre</label>
+                            <input type="text" class="form-control" placeholder="Ingresa tu nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" placeholder="Ingresa tu correo">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Mensaje</label>
+                            <textarea class="form-control" rows="4" placeholder="Escribe tu mensaje"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center py-4 reveal">
+        <p>&copy; 2025 Mi Portafolio | Desarrollado por Abigail Aguirre</p>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="script_personalizado.js"></script>
+</body>
+</html>
